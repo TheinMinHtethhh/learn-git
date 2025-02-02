@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            height: 100vh;
+    
+        }
+
+        .left-column,
+        .right-column {
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .upper-left,
+        .upper-right,
+        .under-left,.middle-right,.under-right {
+            padding: 10px;
+            box-shadow: 2px 2px;
+            border: 1px solid;
+            background-color: white;
+        }
+        .upper-left{
+            background: linear-gradient(45deg, #1A3A68, #E4E4E4, #FFFFFF);
+
+        }
+        .under-left {
+            flex-grow: 1;
+            min-height: 0;
+            background: linear-gradient(45deg, #FFD700, #003366, #FFFFFF);
+
+
+        }
+        .middle-right {
+            background: linear-gradient(45deg, #003366, #FFD700, #F4E1B2);
+            font-weight: bold;
+        }
+        .upper-right {
+            background: linear-gradient(45deg, #6A1B9A, #9C4D97, #D1D1D1);
+
+        }
+
+        .img img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .work {
+            height: 10px;
+        }
+
+        .skill {
+            margin-top: 15px;
+        }
+
+        .python-div,
+        .java-div,
+        .dbms-div {
+            background-color: rgb(24, 208, 18);
+        }
+
+        .python-div {
+            width: 100%;
+            border-radius: 30px;
+            overflow: hidden;
+            height: 20px;
+            margin-top: 5px;
+            position: relative;
+        }
+
+        .python-per {
+            width: 50%;
+            background-color: blue;
+            height: 100%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 20px;
+            border-radius: 30px 0 0 30px;
+            position: absolute;
+        }
+
+        .java-div {
+            width: 100%;
+            border-radius: 30px;
+            overflow: hidden;
+            height: 20px;
+            margin-top: 5px;
+            position: relative;
+        }
+
+        .java-per {
+            width: 40%;
+            background-color: red;
+            height: 100%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 20px;
+            border-radius: 30px 0 0 30px;
+            position: absolute;
+        }
+
+        .dbms-div {
+            width: 100%;
+            border-radius: 30px;
+            overflow: hidden;
+            height: 20px;
+            margin-top: 5px;
+            position: relative;
+        }
+
+        .dbms-per {
+            width: 40%;
+            background-color: rgb(5, 5, 5);
+            height: 100%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 20px;
+            border-radius: 30px 0 0 30px;
+            position: absolute;
+        }
+
+        .Social-media {
+            margin-top: 30px;
+        }
+
+        .social-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="left-column">
+            <div class="upper-left">
+                <div class="img">
+                    <img src="yokohama.JPG" alt="my-photo">
+                </div>
+                <div class="content">
+                    <p style="text-align: center; font-family: 'Courier New', Courier, monospace;font-weight: bold;">Thein Min Htet</p>
+                    <h2 class="work"><i>Work Experience</i></h2>
+                    <p>&nbsp;&nbsp;&nbsp;稼業である軍隊用アクセサリー製造で6歳からやっていました.</p>
+                    <h2><i>Skills</i></h2>
+                    <div class="skill">
+                        <p>Python</p>
+                        <div class="python-div">
+                            <div class="python-per">50%</div>
+                        </div>
+                        <p>Java</p>
+                        <div class="java-div">
+                            <div class="java-per">40%</div>
+                        </div>
+                        <p>DataBase(DBMS)</p>
+                        <div class="dbms-div">
+                            <div class="dbms-per">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="under-left">
+                <div class="certificate">
+                    <h2><i class="fa-solid fa-certificate">Certifications</i></h2>
+                    <div class="jlpt">JlPT-N1</div>
+                    <div class="LCCI">LCCI Level 1,2</div>
+                </div>
+                <div class="Social-media"><strong>Follow me on</strong>
+                    <h3>
+                        <i class="fa-brands fa-facebook social-icon" style="color: #1877F2;"></i>
+                        <i class="fa-brands fa-instagram social-icon" style="color: #E4405F;"></i>
+                        <i class="fa-brands fa-youtube social-icon" style="color: #FF0000;"></i>
+                        <i class="fa-brands fa-github social-icon" style="color: #333;"></i>
+                        <i class="fa-brands fa-linkedin social-icon" style="color: #0A66C2;"></i>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="upper-right">
+                <h2>Overview</h2>
+                <p><strong> 2022年10月</strong>に来日し、レストランで一貫して責任を持って働き続けています。自国では幼少期から家業（軍用ヘルメットやアクセサリー製造）を手伝い、責任感と実務スキルを培いました。柔軟性と勤勉さを活かして新たな環境で成長を目指します。</p>
+            </div>
+            <div class="middle-right">
+                <h2>学歴</h2>
+                <p><strong>2017年</strong>に高校を卒業し、大学を決める前に自分の興味に適するもの習うためざまざまな授業に通いました。大学を決時を時も自分の見につけることのない東洋学を副専攻、英語を専門的に学びました。</p>
+            </div>
+            <div class="under-right">
+                <p><Strong>名前&nbsp;-&nbsp;ティンミンテット</Strong></p>
+                <p><Strong>誕生日&nbsp;-&nbsp;2001.03.16</Strong></p>
+                <p><strong>高校卒業&nbsp;-&nbsp;2017</strong></p>
+                <h3>You can see my projects and updates on my GitHub account below:</h3>
+                <a href="https://github.com/TheinMinHtethhh" target="_blank">
+                <i class="fa-brands fa-github social-icon"></i> GitHub: <strong>TheinMinHtethhh</strong>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
