@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .card-container {
+            width: 60%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .img-contact {
+            display: flex;
+            align-items: center;
+            height: 30%;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .img img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .contact {
+            font-size: 18px;
+        }
+
+        
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .section {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .section h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        
+        <div class="img-contact">
+            <div class="img">
+                <img src="yokohama.JPG" alt="my-photo">
+            </div>
+            <div class="contact">
+                <p><strong>Contact</strong></p>
+                <p>Email: theinminhtet11111@email.com</p>
+                <p>Phone: 08073270471</p>
+            </div>
+        </div>
+
+        
+        <div class="content">
+            <div class="section">
+                <h3>Skills</h3>
+                <p>HTML, CSS, JavaScript, Java, Python</p>
+            </div>
+            <div class="section">
+                <h3>Job Experience</h3>
+                <p></p>not yet
+            </div>
+            <div class="section">
+                <h3>Education</h3>
+                <p>Completed high school and attended university until the third year. Studies were interrupted due to the COVID-19 pandemic.</p>
+            </div>
+            <div class="section">
+                <h3>Profile</h3>
+                <p>I am new to coding and web development, but I am highly motivated and eager to learn. I believe that with dedication and persistence, I can master any skill. </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
