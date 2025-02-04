@@ -23,19 +23,28 @@
 
         .left-column,
         .right-column {
+            flex-grow: 1;
             flex-direction: column;
             display: flex;
             width: 100%;
             height: 100%;
+            
+        }
+        .right-column {
+            flex-grow: 1;
+        }
+        .under-right2 {
+            flex-grow: 1;
         }
 
         .upper-left,
-        .upper-right,
-        .under-left,.middle-right,.under-right {
+        .upper-right,.under-left2,
+        .under-left,.middle-right,.under-right,.under-right2{
             padding: 10px;
             box-shadow: 2px 2px;
             border: 1px solid;
             background-color: white;
+            
         }
         .upper-left{
             background: linear-gradient(45deg, #1A3A68, #E4E4E4, #FFFFFF);
@@ -55,6 +64,18 @@
         .upper-right {
             background: linear-gradient(45deg, #6A1B9A, #9C4D97, #D1D1D1);
 
+        }
+        
+        .under-left2 {
+            background-color: #F4F4F4;
+        }
+        .under-right2 {
+            background-color: #F4E1B2;
+        }
+        .about-me {
+            text-align: center;
+            margin-top: 0px;
+            color: #1A237E;
         }
 
         .img img {
@@ -150,6 +171,9 @@
             margin-right: 10px;
             color: #333;
         }
+        .excellent-point,.strong-point {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
     </style>
 </head>
 
@@ -196,6 +220,16 @@
                         <i class="fa-brands fa-linkedin social-icon" style="color: #0A66C2;"></i>
                     </h3>
                 </div>
+                
+            </div>
+            <div class="under-left2"><h2 class="about-me">ABOUT ME</h2>
+                <p><Strong>名前&nbsp;-&nbsp;ティンミンテット</Strong></p>
+                <p><Strong>誕生日&nbsp;-&nbsp;2001.03.16</Strong></p>
+                <p><strong>高校卒業&nbsp;-&nbsp;2017</strong></p>
+                <h3>You can see my projects and updates on my GitHub account below:</h3>
+                <a href="https://github.com/TheinMinHtethhh" target="_blank">
+                <i class="fa-brands fa-github social-icon"></i> GitHub: <strong>TheinMinHtethhh</strong>
+                </a>
             </div>
         </div>
         <div class="right-column">
@@ -205,16 +239,18 @@
             </div>
             <div class="middle-right">
                 <h2>学歴</h2>
-                <p><strong>2017年</strong>に高校を卒業し、大学を決める前に自分の興味に適するもの習うためざまざまな授業に通いました。大学を決時を時も自分の見につけることのない東洋学を副専攻、英語を専門的に学びました。</p>
+                <p><strong>2017年</strong>に高校を卒業し、大学を決める前に自分の興味に適するもの習うためざまざまな授業に通いました。大学を決める時も自分の見につけることのない東洋学を副専攻、英語を専門的に学びました。</p>
             </div>
-            <div class="under-right">
-                <p><Strong>名前&nbsp;-&nbsp;ティンミンテット</Strong></p>
-                <p><Strong>誕生日&nbsp;-&nbsp;2001.03.16</Strong></p>
-                <p><strong>高校卒業&nbsp;-&nbsp;2017</strong></p>
-                <h3>You can see my projects and updates on my GitHub account below:</h3>
-                <a href="https://github.com/TheinMinHtethhh" target="_blank">
-                <i class="fa-brands fa-github social-icon"></i> GitHub: <strong>TheinMinHtethhh</strong>
-                </a>
+            
+            <div class="under-right2">
+                <div class="excellent-point">
+                    <h3 class="strong">得意な科目</h3>
+                    <p>もともと東洋学に興味があったんですが来日して友達から<strong>IT</strong>は管理の面で人々に役立つという話を聞いて以来情報技術が新しい興味となりました。特にJAVA,PYTHON をやるのが楽しいです。最近<strong>DATABASE</strong>をも学んでいます。世界の様々な情報を管理するのが好きなのです。<strong>HTML,CSS,JAVASCRIPT</strong>はだいたい理解しています。</p>
+                </div>
+                <div class="strong-point">
+                    <h3>長所</h3>
+                    <p>自分どういうタイプの人なのかわかってきたのが小学生3年生の時でした。</p>
+                </div>
             </div>
         </div>
     </div>
