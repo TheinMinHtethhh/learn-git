@@ -1,3 +1,3 @@
 # file6
 
-this is the file 6
+I love mapotoufu!
